@@ -123,32 +123,59 @@ project_2/fast:
 	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/build
 .PHONY : project_2/fast
 
-main.o: main.cpp.o
+queue.o: queue.c.o
 
-.PHONY : main.o
+.PHONY : queue.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/main.cpp.o
-.PHONY : main.cpp.o
+queue.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue.c.o
+.PHONY : queue.c.o
 
-main.i: main.cpp.i
+queue.i: queue.c.i
 
-.PHONY : main.i
+.PHONY : queue.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/main.cpp.i
-.PHONY : main.cpp.i
+queue.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue.c.i
+.PHONY : queue.c.i
 
-main.s: main.cpp.s
+queue.s: queue.c.s
 
-.PHONY : main.s
+.PHONY : queue.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/main.cpp.s
-.PHONY : main.cpp.s
+queue.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue.c.s
+.PHONY : queue.c.s
+
+queue_tester.o: queue_tester.c.o
+
+.PHONY : queue_tester.o
+
+# target to build an object file
+queue_tester.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue_tester.c.o
+.PHONY : queue_tester.c.o
+
+queue_tester.i: queue_tester.c.i
+
+.PHONY : queue_tester.i
+
+# target to preprocess a source file
+queue_tester.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue_tester.c.i
+.PHONY : queue_tester.c.i
+
+queue_tester.s: queue_tester.c.s
+
+.PHONY : queue_tester.s
+
+# target to generate assembly for a file
+queue_tester.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue_tester.c.s
+.PHONY : queue_tester.c.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... project_2"
 	@echo "... edit_cache"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... queue.o"
+	@echo "... queue.i"
+	@echo "... queue.s"
+	@echo "... queue_tester.o"
+	@echo "... queue_tester.i"
+	@echo "... queue_tester.s"
 .PHONY : help
 
 

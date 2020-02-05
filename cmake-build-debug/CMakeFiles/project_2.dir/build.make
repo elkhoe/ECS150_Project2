@@ -57,30 +57,45 @@ include CMakeFiles/project_2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/project_2.dir/flags.make
 
-CMakeFiles/project_2.dir/main.cpp.o: CMakeFiles/project_2.dir/flags.make
-CMakeFiles/project_2.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_2.dir/main.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_2.dir/main.cpp.o -c "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/main.cpp"
+CMakeFiles/project_2.dir/queue_tester.c.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/queue_tester.c.o: ../queue_tester.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/project_2.dir/queue_tester.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project_2.dir/queue_tester.c.o   -c "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/queue_tester.c"
 
-CMakeFiles/project_2.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/main.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/main.cpp" > CMakeFiles/project_2.dir/main.cpp.i
+CMakeFiles/project_2.dir/queue_tester.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project_2.dir/queue_tester.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/queue_tester.c" > CMakeFiles/project_2.dir/queue_tester.c.i
 
-CMakeFiles/project_2.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/main.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/main.cpp" -o CMakeFiles/project_2.dir/main.cpp.s
+CMakeFiles/project_2.dir/queue_tester.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project_2.dir/queue_tester.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/queue_tester.c" -o CMakeFiles/project_2.dir/queue_tester.c.s
+
+CMakeFiles/project_2.dir/queue.c.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/queue.c.o: ../queue.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/project_2.dir/queue.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project_2.dir/queue.c.o   -c "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/queue.c"
+
+CMakeFiles/project_2.dir/queue.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project_2.dir/queue.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/queue.c" > CMakeFiles/project_2.dir/queue.c.i
+
+CMakeFiles/project_2.dir/queue.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project_2.dir/queue.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/queue.c" -o CMakeFiles/project_2.dir/queue.c.s
 
 # Object files for target project_2
 project_2_OBJECTS = \
-"CMakeFiles/project_2.dir/main.cpp.o"
+"CMakeFiles/project_2.dir/queue_tester.c.o" \
+"CMakeFiles/project_2.dir/queue.c.o"
 
 # External object files for target project_2
 project_2_EXTERNAL_OBJECTS =
 
-project_2.exe: CMakeFiles/project_2.dir/main.cpp.o
+project_2.exe: CMakeFiles/project_2.dir/queue_tester.c.o
+project_2.exe: CMakeFiles/project_2.dir/queue.c.o
 project_2.exe: CMakeFiles/project_2.dir/build.make
 project_2.exe: CMakeFiles/project_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable project_2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable project_2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project_2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
