@@ -7,10 +7,10 @@
 //queue_t is a pointer to the struct queue
 typedef struct node {
   struct node *next;
-  void *value
-};
+  void *data;
+}node;
+
 struct queue {
-	/* TODO Phase 1 */
 	struct node *head;
 	struct node *tail;
 	int size;
@@ -18,7 +18,6 @@ struct queue {
 
 queue_t queue_create(void)
 {
-	/* TODO Phase 1 */
 	queue_t q;
 	//initialize queue structure
 	q = malloc(sizeof(struct queue));
@@ -42,35 +41,114 @@ int isEmpty(const struct queue *q) { //FIXME
 
 int queue_destroy(queue_t queue)
 {
-	/* TODO Phase 1 */
-
+	if(queue == NULL || queue->size != 0) {
+	  return -1;
+	}
+	else {
+	  free(queue->head);
+	  free(queue);
+	}
+	return 0;
 }
 
 int queue_enqueue(queue_t queue, void *data)
 {
-	/* TODO Phase 1 */
-	struct node *val;
-	val = malloc(sizeof(struct node));
+    if(queue == NULL || data == NULL) { //checks if queue or data is null
+      return -1;
+    }
+
+	struct node *new;
+	new = malloc(sizeof(struct node));
+
+    //initializing new element in queue
+	new->data = data;
+	new->next = 0;
+
+	if(queue->head == 0){
+	  queue->head = new;
+	}
+	else {
+	  queue->tail->next = new;
+	}
+	queue->size += 1;
+	return 0;
 }
 
-int queue_dequeue(queue_t queue, void **data)
-{
-	/* TODO Phase 1 */
+int queue_dequeue(queue_t queue, void **data) {
+  if(queue == NULL || data == NULL) {
+    return -1;
+  }
+
+  struct node *remove;
+
+  *data = queue->head->data;
+
+  remove = queue->head;
+  queue->head = remove->next;
+
+  queue->size -= 1;
+
+  free(remove);
+
+  return 0;
 }
+
 
 int queue_delete(queue_t queue, void *data)
 {
-	/* TODO Phase 1 */
+	if(queue == NULL || data == NULL) {
+	  return -1;
+	}
+
+	node *current = queue->head;
+	if(current->data == data) {
+	  void *ptr;
+	  queue_dequeue(queue, &ptr);
+	}
+	else { //FIXME: change
+	  while(current != NULL) {
+        if (current->next != NULL && current->next->data == data) {
+          node *delete = current->next;
+          current->next = current->next->next;
+          queue->size -= 1;
+          free(delete);
+          break;
+        }
+        current = current->next; //on to the next node in the queue
+	  }
+	  return -1; //if none match data, return -1
+	}
+	return 0;
 }
 
 int queue_iterate(queue_t queue, queue_func_t func, void *arg, void **data)
 {
-	/* TODO Phase 1 */
+  if(queue == NULL || data == NULL) {
+    return -1;
+  }
+
+  if(isEmpty(queue)) {
+    return 0;
+  }
+
+  node *current = queue->head;
+
+  while(current !=NULL) {
+    if((*func)(current->data, arg) == 1) {
+      //If data is not null, it receives data item where iteration stops
+      if (data != NULL) {
+        *data = current->data;
+        return 1;
+      }
+    }
+    current = current->next; //iterate to the next node
+  }
+  return 0;
 }
 
 int queue_length(queue_t queue)
 {
-  if(queue == NULL)
+  if(queue == 0)
     return -1;
   else
     return queue->size;

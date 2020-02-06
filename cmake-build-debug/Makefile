@@ -123,6 +123,33 @@ project_2/fast:
 	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/build
 .PHONY : project_2/fast
 
+context.o: context.c.o
+
+.PHONY : context.o
+
+# target to build an object file
+context.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/context.c.o
+.PHONY : context.c.o
+
+context.i: context.c.i
+
+.PHONY : context.i
+
+# target to preprocess a source file
+context.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/context.c.i
+.PHONY : context.c.i
+
+context.s: context.c.s
+
+.PHONY : context.s
+
+# target to generate assembly for a file
+context.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/context.c.s
+.PHONY : context.c.s
+
 queue.o: queue.c.o
 
 .PHONY : queue.o
@@ -177,6 +204,33 @@ queue_tester.c.s:
 	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue_tester.c.s
 .PHONY : queue_tester.c.s
 
+uthread.o: uthread.c.o
+
+.PHONY : uthread.o
+
+# target to build an object file
+uthread.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread.c.o
+.PHONY : uthread.c.o
+
+uthread.i: uthread.c.i
+
+.PHONY : uthread.i
+
+# target to preprocess a source file
+uthread.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread.c.i
+.PHONY : uthread.c.i
+
+uthread.s: uthread.c.s
+
+.PHONY : uthread.s
+
+# target to generate assembly for a file
+uthread.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread.c.s
+.PHONY : uthread.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +240,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... project_2"
 	@echo "... edit_cache"
+	@echo "... context.o"
+	@echo "... context.i"
+	@echo "... context.s"
 	@echo "... queue.o"
 	@echo "... queue.i"
 	@echo "... queue.s"
 	@echo "... queue_tester.o"
 	@echo "... queue_tester.i"
 	@echo "... queue_tester.s"
+	@echo "... uthread.o"
+	@echo "... uthread.i"
+	@echo "... uthread.s"
 .PHONY : help
 
 

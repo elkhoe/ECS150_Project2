@@ -13,6 +13,23 @@
 
 /* TODO Phase 2 */
 
+typedef enum{
+  INIT,
+  READY,
+  RUNNING,
+  BLOCKED,
+  FINISHED,
+  WAITING
+}thread_state;
+
+typedef struct TCB {
+  thread_state state;
+  int retval;
+  uthread_t TID;
+
+
+}uthread_TCB;
+
 void uthread_yield(void)
 {
 	/* TODO Phase 2 */
