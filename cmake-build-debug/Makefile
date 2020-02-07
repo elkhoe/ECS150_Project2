@@ -123,194 +123,194 @@ project_2/fast:
 	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/build
 .PHONY : project_2/fast
 
-context.o: context.c.o
+libuthread/context.o: libuthread/context.c.o
 
-.PHONY : context.o
-
-# target to build an object file
-context.c.o:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/context.c.o
-.PHONY : context.c.o
-
-context.i: context.c.i
-
-.PHONY : context.i
-
-# target to preprocess a source file
-context.c.i:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/context.c.i
-.PHONY : context.c.i
-
-context.s: context.c.s
-
-.PHONY : context.s
-
-# target to generate assembly for a file
-context.c.s:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/context.c.s
-.PHONY : context.c.s
-
-preempt.o: preempt.c.o
-
-.PHONY : preempt.o
+.PHONY : libuthread/context.o
 
 # target to build an object file
-preempt.c.o:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/preempt.c.o
-.PHONY : preempt.c.o
+libuthread/context.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/context.c.o
+.PHONY : libuthread/context.c.o
 
-preempt.i: preempt.c.i
+libuthread/context.i: libuthread/context.c.i
 
-.PHONY : preempt.i
+.PHONY : libuthread/context.i
 
 # target to preprocess a source file
-preempt.c.i:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/preempt.c.i
-.PHONY : preempt.c.i
+libuthread/context.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/context.c.i
+.PHONY : libuthread/context.c.i
 
-preempt.s: preempt.c.s
+libuthread/context.s: libuthread/context.c.s
 
-.PHONY : preempt.s
+.PHONY : libuthread/context.s
 
 # target to generate assembly for a file
-preempt.c.s:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/preempt.c.s
-.PHONY : preempt.c.s
+libuthread/context.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/context.c.s
+.PHONY : libuthread/context.c.s
 
-queue.o: queue.c.o
+libuthread/preempt.o: libuthread/preempt.c.o
 
-.PHONY : queue.o
+.PHONY : libuthread/preempt.o
 
 # target to build an object file
-queue.c.o:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue.c.o
-.PHONY : queue.c.o
+libuthread/preempt.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/preempt.c.o
+.PHONY : libuthread/preempt.c.o
 
-queue.i: queue.c.i
+libuthread/preempt.i: libuthread/preempt.c.i
 
-.PHONY : queue.i
+.PHONY : libuthread/preempt.i
 
 # target to preprocess a source file
-queue.c.i:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue.c.i
-.PHONY : queue.c.i
+libuthread/preempt.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/preempt.c.i
+.PHONY : libuthread/preempt.c.i
 
-queue.s: queue.c.s
+libuthread/preempt.s: libuthread/preempt.c.s
 
-.PHONY : queue.s
+.PHONY : libuthread/preempt.s
 
 # target to generate assembly for a file
-queue.c.s:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue.c.s
-.PHONY : queue.c.s
+libuthread/preempt.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/preempt.c.s
+.PHONY : libuthread/preempt.c.s
 
-queue_tester.o: queue_tester.c.o
+libuthread/queue.o: libuthread/queue.c.o
 
-.PHONY : queue_tester.o
+.PHONY : libuthread/queue.o
 
 # target to build an object file
-queue_tester.c.o:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue_tester.c.o
-.PHONY : queue_tester.c.o
+libuthread/queue.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/queue.c.o
+.PHONY : libuthread/queue.c.o
 
-queue_tester.i: queue_tester.c.i
+libuthread/queue.i: libuthread/queue.c.i
 
-.PHONY : queue_tester.i
+.PHONY : libuthread/queue.i
 
 # target to preprocess a source file
-queue_tester.c.i:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue_tester.c.i
-.PHONY : queue_tester.c.i
+libuthread/queue.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/queue.c.i
+.PHONY : libuthread/queue.c.i
 
-queue_tester.s: queue_tester.c.s
+libuthread/queue.s: libuthread/queue.c.s
 
-.PHONY : queue_tester.s
+.PHONY : libuthread/queue.s
 
 # target to generate assembly for a file
-queue_tester.c.s:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/queue_tester.c.s
-.PHONY : queue_tester.c.s
+libuthread/queue.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/queue.c.s
+.PHONY : libuthread/queue.c.s
 
-uthread.o: uthread.c.o
+libuthread/uthread.o: libuthread/uthread.c.o
 
-.PHONY : uthread.o
+.PHONY : libuthread/uthread.o
 
 # target to build an object file
-uthread.c.o:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread.c.o
-.PHONY : uthread.c.o
+libuthread/uthread.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/uthread.c.o
+.PHONY : libuthread/uthread.c.o
 
-uthread.i: uthread.c.i
+libuthread/uthread.i: libuthread/uthread.c.i
 
-.PHONY : uthread.i
+.PHONY : libuthread/uthread.i
 
 # target to preprocess a source file
-uthread.c.i:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread.c.i
-.PHONY : uthread.c.i
+libuthread/uthread.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/uthread.c.i
+.PHONY : libuthread/uthread.c.i
 
-uthread.s: uthread.c.s
+libuthread/uthread.s: libuthread/uthread.c.s
 
-.PHONY : uthread.s
+.PHONY : libuthread/uthread.s
 
 # target to generate assembly for a file
-uthread.c.s:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread.c.s
-.PHONY : uthread.c.s
+libuthread/uthread.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/libuthread/uthread.c.s
+.PHONY : libuthread/uthread.c.s
 
-uthread_hello.o: uthread_hello.c.o
+tests/queue_tester.o: tests/queue_tester.c.o
 
-.PHONY : uthread_hello.o
+.PHONY : tests/queue_tester.o
 
 # target to build an object file
-uthread_hello.c.o:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_hello.c.o
-.PHONY : uthread_hello.c.o
+tests/queue_tester.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/tests/queue_tester.c.o
+.PHONY : tests/queue_tester.c.o
 
-uthread_hello.i: uthread_hello.c.i
+tests/queue_tester.i: tests/queue_tester.c.i
 
-.PHONY : uthread_hello.i
+.PHONY : tests/queue_tester.i
 
 # target to preprocess a source file
-uthread_hello.c.i:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_hello.c.i
-.PHONY : uthread_hello.c.i
+tests/queue_tester.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/tests/queue_tester.c.i
+.PHONY : tests/queue_tester.c.i
 
-uthread_hello.s: uthread_hello.c.s
+tests/queue_tester.s: tests/queue_tester.c.s
 
-.PHONY : uthread_hello.s
+.PHONY : tests/queue_tester.s
 
 # target to generate assembly for a file
-uthread_hello.c.s:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_hello.c.s
-.PHONY : uthread_hello.c.s
+tests/queue_tester.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/tests/queue_tester.c.s
+.PHONY : tests/queue_tester.c.s
 
-uthread_yield.o: uthread_yield.c.o
+tests/uthread_hello.o: tests/uthread_hello.c.o
 
-.PHONY : uthread_yield.o
+.PHONY : tests/uthread_hello.o
 
 # target to build an object file
-uthread_yield.c.o:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_yield.c.o
-.PHONY : uthread_yield.c.o
+tests/uthread_hello.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/tests/uthread_hello.c.o
+.PHONY : tests/uthread_hello.c.o
 
-uthread_yield.i: uthread_yield.c.i
+tests/uthread_hello.i: tests/uthread_hello.c.i
 
-.PHONY : uthread_yield.i
+.PHONY : tests/uthread_hello.i
 
 # target to preprocess a source file
-uthread_yield.c.i:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_yield.c.i
-.PHONY : uthread_yield.c.i
+tests/uthread_hello.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/tests/uthread_hello.c.i
+.PHONY : tests/uthread_hello.c.i
 
-uthread_yield.s: uthread_yield.c.s
+tests/uthread_hello.s: tests/uthread_hello.c.s
 
-.PHONY : uthread_yield.s
+.PHONY : tests/uthread_hello.s
 
 # target to generate assembly for a file
-uthread_yield.c.s:
-	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_yield.c.s
-.PHONY : uthread_yield.c.s
+tests/uthread_hello.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/tests/uthread_hello.c.s
+.PHONY : tests/uthread_hello.c.s
+
+tests/uthread_yield.o: tests/uthread_yield.c.o
+
+.PHONY : tests/uthread_yield.o
+
+# target to build an object file
+tests/uthread_yield.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/tests/uthread_yield.c.o
+.PHONY : tests/uthread_yield.c.o
+
+tests/uthread_yield.i: tests/uthread_yield.c.i
+
+.PHONY : tests/uthread_yield.i
+
+# target to preprocess a source file
+tests/uthread_yield.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/tests/uthread_yield.c.i
+.PHONY : tests/uthread_yield.c.i
+
+tests/uthread_yield.s: tests/uthread_yield.c.s
+
+.PHONY : tests/uthread_yield.s
+
+# target to generate assembly for a file
+tests/uthread_yield.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/tests/uthread_yield.c.s
+.PHONY : tests/uthread_yield.c.s
 
 # Help Target
 help:
@@ -321,27 +321,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... project_2"
 	@echo "... edit_cache"
-	@echo "... context.o"
-	@echo "... context.i"
-	@echo "... context.s"
-	@echo "... preempt.o"
-	@echo "... preempt.i"
-	@echo "... preempt.s"
-	@echo "... queue.o"
-	@echo "... queue.i"
-	@echo "... queue.s"
-	@echo "... queue_tester.o"
-	@echo "... queue_tester.i"
-	@echo "... queue_tester.s"
-	@echo "... uthread.o"
-	@echo "... uthread.i"
-	@echo "... uthread.s"
-	@echo "... uthread_hello.o"
-	@echo "... uthread_hello.i"
-	@echo "... uthread_hello.s"
-	@echo "... uthread_yield.o"
-	@echo "... uthread_yield.i"
-	@echo "... uthread_yield.s"
+	@echo "... libuthread/context.o"
+	@echo "... libuthread/context.i"
+	@echo "... libuthread/context.s"
+	@echo "... libuthread/preempt.o"
+	@echo "... libuthread/preempt.i"
+	@echo "... libuthread/preempt.s"
+	@echo "... libuthread/queue.o"
+	@echo "... libuthread/queue.i"
+	@echo "... libuthread/queue.s"
+	@echo "... libuthread/uthread.o"
+	@echo "... libuthread/uthread.i"
+	@echo "... libuthread/uthread.s"
+	@echo "... tests/queue_tester.o"
+	@echo "... tests/queue_tester.i"
+	@echo "... tests/queue_tester.s"
+	@echo "... tests/uthread_hello.o"
+	@echo "... tests/uthread_hello.i"
+	@echo "... tests/uthread_hello.s"
+	@echo "... tests/uthread_yield.o"
+	@echo "... tests/uthread_yield.i"
+	@echo "... tests/uthread_yield.s"
 .PHONY : help
 
 

@@ -80,37 +80,37 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/context.c">
+		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/context.c">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/context.h">
+		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/context.h">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/preempt.c">
+		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/preempt.c">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/preempt.h">
+		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/preempt.h">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/queue.c">
+		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/queue.c">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/queue.h">
+		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/queue.h">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/queue_tester.c">
+		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/uthread.c">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread.c">
+		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/uthread.h">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread.h">
+		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/tests/queue_tester.c">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread_hello.c">
+		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/tests/uthread_hello.c">
 			<Option target="project_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread_yield.c">
+		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/tests/uthread_yield.c">
 			<Option target="project_2"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/CMakeLists.txt">

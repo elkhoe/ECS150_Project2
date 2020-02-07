@@ -114,9 +114,9 @@ int queue_delete(queue_t queue, void *data)
           free(delete);
           break;
         }
-        current = current->next; //on to the next node in the queue
+        current = current->next;
 	  }
-	  return -1; //if none match data, return -1
+	  return -1;
 	}
 	return 0;
 }
@@ -135,7 +135,7 @@ int queue_iterate(queue_t queue, queue_func_t func, void *arg, void **data)
 
   while(current != NULL) {
     if((*func)(current->data, arg) == 1) {
-      //If data is not null, it receives data item where iteration stops
+
       if (data != NULL) {
         *data = current->data;
         return 1;

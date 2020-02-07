@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/context.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/context.c.o"
-  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/preempt.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/preempt.c.o"
-  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/queue.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/queue.c.o"
-  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/queue_tester.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/queue_tester.c.o"
-  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/uthread.c.o"
-  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread_hello.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/uthread_hello.c.o"
-  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread_yield.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/uthread_yield.c.o"
+  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/context.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/libuthread/context.c.o"
+  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/preempt.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/libuthread/preempt.c.o"
+  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/queue.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/libuthread/queue.c.o"
+  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/libuthread/uthread.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/libuthread/uthread.c.o"
+  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/tests/queue_tester.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/tests/queue_tester.c.o"
+  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/tests/uthread_hello.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/tests/uthread_hello.c.o"
+  "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/tests/uthread_yield.c" "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles/project_2.dir/tests/uthread_yield.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
