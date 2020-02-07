@@ -5,14 +5,17 @@ CC := gcc
 
 all: $(lib)
 
-$(lib): queue.o
-	ar rcs libuthread.a queue.o
+$(lib): queue.o uthread.o context.o preempt.o
+	ar rcs libuthread.a queue.o uthread.o
+
+preempt.o: preempt.c
+	$(CC) $(CFLAGS) -c -o preempt.o preempt.c
 
 queue.o: queue.c
-	$(CC) $(CFLAGS) -o queue.o queue.c
+	$(CC) $(CFLAGS) -c -o queue.o queue.c
 
-uthread.o: uthread.c queue.c
-	$(CC) $(CFLAGS) -o uthread.o uthread.c queue.c
+uthread.o: uthread.c
+	$(CC) $(CFLAGS) -c -o uthread.o uthread.c
 
 clean:
 	rm -f libuthread.a *.o

@@ -54,7 +54,7 @@ int uthread_init()
   {
     return -1;
   }
-
+  return 0;
 }
 
 /*------PULIC API-------*/
@@ -96,11 +96,6 @@ uthread_t uthread_self(void) { return current_block->TID; } //return TID
 uthread_TCB allocate(thread_state state, uthread_t TID) {
   uthread_TCB *new_block = malloc(sizeof(uthread_TCB));
 
-  if(new_block == NULL)
-  {
-    return 0;
-  }
-
   new_block->TID = TID;
   new_block->retval = 0;
   new_block->state = state;
@@ -141,6 +136,7 @@ int uthread_create(uthread_func_t func, void *arg)
 
 	uthread_ctx_init(&(*new_block->context),&(new_block->stack_ptr),func, arg);
 
+	return 0;
 }
 
 void uthread_exit(int retval)
@@ -168,7 +164,8 @@ int uthread_join(uthread_t tid, int *retval) //will utilize TID_find
 {
   preempt_disable();
 
-  TID_find(retval, tid);
+  //TID_find(retval, (uthread_t) tid);
+  return 0;
 
 }
 
