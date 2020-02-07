@@ -48,7 +48,7 @@ int TID_find(void *data, void* arg)
 }
 
 //first instantiation of uthread
-int uthread_create()
+int uthread_init()
 {
   if(current_block == 0)
   {
@@ -73,7 +73,7 @@ void uthread_yield(void)
   preempt_disable();
 
   queue_enqueue(current_queue, current_block);
-  queue_dequeue();
+  queue_dequeue(current_queue, &ptr);
 
   if(queue_length(current_queue) == 0)
   {
@@ -91,7 +91,7 @@ void uthread_yield(void)
   uthread_ctx_switch(current_block->context, store_block->context);
 }
 
-uthread_t uthread_self(void) { return current_block->TID; }
+uthread_t uthread_self(void) { return current_block->TID; } //return TID
 
 uthread_TCB allocate(thread_state state, uthread_t TID) {
   uthread_TCB *new_block = malloc(sizeof(uthread_TCB));
@@ -133,21 +133,19 @@ int uthread_create(uthread_func_t func, void *arg)
 	}
 
 	*new_block = allocate(RUNNING,new_block->TID);
-	if(*queue == 0)
+	if(current_queue == 0)
     {
 	  queue_create();
     }
+    queue_enqueue(current_queue, new_block);
 
-
+	uthread_ctx_init(&(*new_block->context),&(new_block->stack_ptr),func, arg);
 
 }
 
 void uthread_exit(int retval)
 {
-	if(current_block->state != RUNNING)
-    {
-
-    }
+	preempt_disable();
 
     current_block->retval = retval;
 	current_block->state = FINISHED;
@@ -157,16 +155,20 @@ void uthread_exit(int retval)
 	  uthread_TCB *collecting_block;
 	  collecting_block->state = READY;
 
-	  queue_func_t finding;
+	  queue_func_t find;
 
-	  queue_iterate();
+	  find = &TID_find;
+
+	  queue_iterate(current_queue, find, (void*)&current_block->collected, (void**)&current_block->collecting);
 	}
 	uthread_yield();
 }
 
-int uthread_join(uthread_t tid, int *retval)
+int uthread_join(uthread_t tid, int *retval) //will utilize TID_find
 {
-	/* TODO Phase 2 */
-	/* TODO Phase 3 */
+  preempt_disable();
+
+  TID_find(retval, tid);
+
 }
 

@@ -3,6 +3,6 @@ project(project_2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(project_2 queue_tester.c queue.c queue.h
-        uthread.c uthread.h context.c context.h uthread_hello.c
-        preempt.c preempt.h uthread_yield.c)
+add_executable(project_2 tests/queue_tester.c libuthread/queue.c libuthread/queue.h
+        libuthread/uthread.c libuthread/uthread.h libuthread/context.c libuthread/context.h tests/uthread_hello.c
+        libuthread/preempt.c libuthread/preempt.h tests/uthread_yield.c)

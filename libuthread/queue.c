@@ -133,7 +133,7 @@ int queue_iterate(queue_t queue, queue_func_t func, void *arg, void **data)
 
   node *current = queue->head;
 
-  while(current !=NULL) {
+  while(current != NULL) {
     if((*func)(current->data, arg) == 1) {
       //If data is not null, it receives data item where iteration stops
       if (data != NULL) {
