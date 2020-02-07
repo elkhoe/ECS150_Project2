@@ -34,6 +34,7 @@ typedef struct TCB { //FIXME maybe change some values
 //global vars
 uthread_t TID;
 queue_t current_queue;
+//uthread_TCB *previous_block = 0; //not sure if needed
 uthread_TCB *current_block = 0;
 
 int TID_find(void *data, void* arg)
@@ -47,7 +48,7 @@ int TID_find(void *data, void* arg)
 }
 
 //first instantiation of uthread
-int uthread_init()
+int uthread_create()
 {
   if(current_block == 0)
   {
@@ -59,19 +60,35 @@ int uthread_init()
 /*------PULIC API-------*/
 void uthread_yield(void)
 {
-  uthread_TCB *next_block;
-  current_block->state = READY;
+  uthread_TCB *store_block;
+  void *ptr;
 
-  preempt_disable();
-
-  uthread_ctx_switch(current_block->context, next_block->context);
   if(current_block->state == RUNNING)
   {
     current_block->state = READY;
   }
 
-  current_block = next_block;
+  current_block->state = READY;
 
+  preempt_disable();
+
+  queue_enqueue(current_queue, current_block);
+  queue_dequeue();
+
+  if(queue_length(current_queue) == 0)
+  {
+    queue_destroy(current_queue);
+    current_queue = NULL;
+  }
+
+  store_block = current_block;
+  current_block = (uthread_TCB*)ptr;
+
+  current_block->state = RUNNING;
+
+  preempt_enable();
+
+  uthread_ctx_switch(current_block->context, store_block->context);
 }
 
 uthread_t uthread_self(void) { return current_block->TID; }
@@ -104,6 +121,8 @@ uthread_TCB allocate(thread_state state, uthread_t TID) {
 int uthread_create(uthread_func_t func, void *arg)
 {
 	uthread_TCB *new_block = 0;
+
+	preempt_start();
 
 	if(current_block == 0)
 	{

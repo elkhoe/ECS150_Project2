@@ -16,6 +16,11 @@
 #define HZ 100
 
 sigset_t sigset;
+
+void handler(int signum)
+{
+
+}
 void preempt_disable(void)
 {
 	sigprocmask(SIG_BLOCK, &sigset, 0);
