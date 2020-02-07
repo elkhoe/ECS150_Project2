@@ -17,6 +17,9 @@ queue.o: queue.c
 uthread.o: uthread.c
 	$(CC) $(CFLAGS) -c -o uthread.o uthread.c
 
+context.o: context.c
+	$(CC) $(CFLAGS) -c -o context.o context.c
+
 clean:
 	rm -f libuthread.a *.o
 
