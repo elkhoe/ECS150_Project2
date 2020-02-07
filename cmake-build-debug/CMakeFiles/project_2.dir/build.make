@@ -109,12 +109,54 @@ CMakeFiles/project_2.dir/context.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project_2.dir/context.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/context.c" -o CMakeFiles/project_2.dir/context.c.s
 
+CMakeFiles/project_2.dir/uthread_hello.c.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/uthread_hello.c.o: ../uthread_hello.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/project_2.dir/uthread_hello.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project_2.dir/uthread_hello.c.o   -c "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread_hello.c"
+
+CMakeFiles/project_2.dir/uthread_hello.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project_2.dir/uthread_hello.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread_hello.c" > CMakeFiles/project_2.dir/uthread_hello.c.i
+
+CMakeFiles/project_2.dir/uthread_hello.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project_2.dir/uthread_hello.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread_hello.c" -o CMakeFiles/project_2.dir/uthread_hello.c.s
+
+CMakeFiles/project_2.dir/preempt.c.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/preempt.c.o: ../preempt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/project_2.dir/preempt.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project_2.dir/preempt.c.o   -c "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/preempt.c"
+
+CMakeFiles/project_2.dir/preempt.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project_2.dir/preempt.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/preempt.c" > CMakeFiles/project_2.dir/preempt.c.i
+
+CMakeFiles/project_2.dir/preempt.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project_2.dir/preempt.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/preempt.c" -o CMakeFiles/project_2.dir/preempt.c.s
+
+CMakeFiles/project_2.dir/uthread_yield.c.o: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/uthread_yield.c.o: ../uthread_yield.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/project_2.dir/uthread_yield.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/project_2.dir/uthread_yield.c.o   -c "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread_yield.c"
+
+CMakeFiles/project_2.dir/uthread_yield.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/project_2.dir/uthread_yield.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread_yield.c" > CMakeFiles/project_2.dir/uthread_yield.c.i
+
+CMakeFiles/project_2.dir/uthread_yield.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/project_2.dir/uthread_yield.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/uthread_yield.c" -o CMakeFiles/project_2.dir/uthread_yield.c.s
+
 # Object files for target project_2
 project_2_OBJECTS = \
 "CMakeFiles/project_2.dir/queue_tester.c.o" \
 "CMakeFiles/project_2.dir/queue.c.o" \
 "CMakeFiles/project_2.dir/uthread.c.o" \
-"CMakeFiles/project_2.dir/context.c.o"
+"CMakeFiles/project_2.dir/context.c.o" \
+"CMakeFiles/project_2.dir/uthread_hello.c.o" \
+"CMakeFiles/project_2.dir/preempt.c.o" \
+"CMakeFiles/project_2.dir/uthread_yield.c.o"
 
 # External object files for target project_2
 project_2_EXTERNAL_OBJECTS =
@@ -123,9 +165,12 @@ project_2.exe: CMakeFiles/project_2.dir/queue_tester.c.o
 project_2.exe: CMakeFiles/project_2.dir/queue.c.o
 project_2.exe: CMakeFiles/project_2.dir/uthread.c.o
 project_2.exe: CMakeFiles/project_2.dir/context.c.o
+project_2.exe: CMakeFiles/project_2.dir/uthread_hello.c.o
+project_2.exe: CMakeFiles/project_2.dir/preempt.c.o
+project_2.exe: CMakeFiles/project_2.dir/uthread_yield.c.o
 project_2.exe: CMakeFiles/project_2.dir/build.make
 project_2.exe: CMakeFiles/project_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable project_2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/cygdrive/c/Users/Ethan Khoe/CLionProjects/project_2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable project_2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project_2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -15,14 +15,15 @@
  */
 #define HZ 100
 
+sigset_t sigset;
 void preempt_disable(void)
 {
-	/* TODO Phase 4 */
+	sigprocmask(SIG_BLOCK, &sigset, 0);
 }
 
 void preempt_enable(void)
 {
-	/* TODO Phase 4 */
+	sigprocmask(SIG_UNBLOCK, &sigset, 0);
 }
 
 void preempt_start(void)

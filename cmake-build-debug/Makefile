@@ -150,6 +150,33 @@ context.c.s:
 	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/context.c.s
 .PHONY : context.c.s
 
+preempt.o: preempt.c.o
+
+.PHONY : preempt.o
+
+# target to build an object file
+preempt.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/preempt.c.o
+.PHONY : preempt.c.o
+
+preempt.i: preempt.c.i
+
+.PHONY : preempt.i
+
+# target to preprocess a source file
+preempt.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/preempt.c.i
+.PHONY : preempt.c.i
+
+preempt.s: preempt.c.s
+
+.PHONY : preempt.s
+
+# target to generate assembly for a file
+preempt.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/preempt.c.s
+.PHONY : preempt.c.s
+
 queue.o: queue.c.o
 
 .PHONY : queue.o
@@ -231,6 +258,60 @@ uthread.c.s:
 	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread.c.s
 .PHONY : uthread.c.s
 
+uthread_hello.o: uthread_hello.c.o
+
+.PHONY : uthread_hello.o
+
+# target to build an object file
+uthread_hello.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_hello.c.o
+.PHONY : uthread_hello.c.o
+
+uthread_hello.i: uthread_hello.c.i
+
+.PHONY : uthread_hello.i
+
+# target to preprocess a source file
+uthread_hello.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_hello.c.i
+.PHONY : uthread_hello.c.i
+
+uthread_hello.s: uthread_hello.c.s
+
+.PHONY : uthread_hello.s
+
+# target to generate assembly for a file
+uthread_hello.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_hello.c.s
+.PHONY : uthread_hello.c.s
+
+uthread_yield.o: uthread_yield.c.o
+
+.PHONY : uthread_yield.o
+
+# target to build an object file
+uthread_yield.c.o:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_yield.c.o
+.PHONY : uthread_yield.c.o
+
+uthread_yield.i: uthread_yield.c.i
+
+.PHONY : uthread_yield.i
+
+# target to preprocess a source file
+uthread_yield.c.i:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_yield.c.i
+.PHONY : uthread_yield.c.i
+
+uthread_yield.s: uthread_yield.c.s
+
+.PHONY : uthread_yield.s
+
+# target to generate assembly for a file
+uthread_yield.c.s:
+	$(MAKE) -f CMakeFiles/project_2.dir/build.make CMakeFiles/project_2.dir/uthread_yield.c.s
+.PHONY : uthread_yield.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,6 +324,9 @@ help:
 	@echo "... context.o"
 	@echo "... context.i"
 	@echo "... context.s"
+	@echo "... preempt.o"
+	@echo "... preempt.i"
+	@echo "... preempt.s"
 	@echo "... queue.o"
 	@echo "... queue.i"
 	@echo "... queue.s"
@@ -252,6 +336,12 @@ help:
 	@echo "... uthread.o"
 	@echo "... uthread.i"
 	@echo "... uthread.s"
+	@echo "... uthread_hello.o"
+	@echo "... uthread_hello.i"
+	@echo "... uthread_hello.s"
+	@echo "... uthread_yield.o"
+	@echo "... uthread_yield.i"
+	@echo "... uthread_yield.s"
 .PHONY : help
 
 
