@@ -1,6 +1,6 @@
 Phase 1
 
-We started implementing a traditional FIFO queue, utilizing a standard linked list with node elements. There consists a head and tail node to help keep track of the linked list elements. Also included is the size of the linked list. 
+We started implementing a traditional FIFO queue, utilizing a standard linked list with node elements. The data structure consists of a head and tail node to help keep track of the linked list elements. Also included is the size of the linked list. 
 
 Phase 2
 
